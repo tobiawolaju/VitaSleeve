@@ -1,17 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
     const mainNav = document.querySelector('.main-nav');
+    const mobileNavClose = document.querySelector('.mobile-nav-close');
     const themeToggle = document.getElementById('theme-toggle');
 
     if (mobileNavToggle && mainNav) {
         mobileNavToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
+            mainNav.classList.add('active');
+        });
+    }
+
+    if (mobileNavClose && mainNav) {
+        mobileNavClose.addEventListener('click', () => {
+            mainNav.classList.remove('active');
         });
     }
 
     // Theme Toggler
     const currentTheme = localStorage.getItem('theme') || 'dark';
     document.body.dataset.theme = currentTheme;
+
 
     if (themeToggle) {
         themeToggle.addEventListener('click', () => {
