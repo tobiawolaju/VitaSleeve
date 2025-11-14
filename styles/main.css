@@ -76,8 +76,8 @@ h1, h2, h3 {
     letter-spacing: -0.02em;
 }
 
-h1 { font-size: 4rem; }
-h2 { font-size: 3rem; }
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
 h3 { font-size: 1.75rem; }
 
 p {
@@ -192,6 +192,9 @@ ul {
 
 /* Theme FAB */
 .theme-fab {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
     background: var(--surface-color);
     border: 1px solid var(--border-color);
     color: var(--text-color);
