@@ -282,14 +282,12 @@ body[data-theme='light'] .moon-icon { display: none; }
 
 .hero h1 {
     max-width: 900px;
-    font-size: 5rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     animation: fadeInDown 1s ease-out;
 }
 
 .hero .tagline {
-    font-size: 1.5rem;
     color: var(--secondary-text-color);
     margin-bottom: 3rem;
     max-width: 600px;
