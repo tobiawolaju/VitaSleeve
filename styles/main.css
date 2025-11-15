@@ -206,6 +206,7 @@ ul {
     align-items: center;
     justify-content: center;
     transition: all var(--transition-speed) ease;
+    z-index: 999;
 }
 .theme-fab:hover {
     transform: translateY(-2px);
@@ -245,12 +246,14 @@ body[data-theme='light'] .moon-icon { display: none; }
     transform: translateY(-3px);
     box-shadow: 0 8px 25px var(--glow-color);
     background-color: color-mix(in srgb, var(--primary-color) 90%, #fff);
+    margin: 10px;
 }
 
 .btn-secondary {
     background-color: var(--surface-color);
     color: var(--text-color);
     border-color: var(--border-color);
+    margin: 10px;
 }
 
 .btn-secondary:hover {
@@ -399,7 +402,7 @@ body[data-theme='light'] .moon-icon { display: none; }
     max-width: 800px;
     aspect-ratio: 16 / 9;
     background-color: var(--surface-color);
-    margin: 3rem auto 0;
+    margin: 0rem auto 0;
     border-radius: var(--border-radius);
     display: flex;
     align-items: center;
@@ -585,7 +588,8 @@ body[data-theme='light'] .moon-icon { display: none; }
     gap: 10px;
 }
 .cart-item-qty {
-    background: var(--border-color);
+    background: var(--primary-color);
+    color: #f5f5f7;
     padding: 2px 6px;
     border-radius: 4px;
     font-size: 0.8rem;
@@ -696,7 +700,7 @@ body[data-theme='light'] .moon-icon { display: none; }
         position: absolute;
         top: -5px;
         right: -5px;
-        background: red;
+        background-color: var(--primary-color);
         color: white;
         width: 24px;
         height: 24px;
